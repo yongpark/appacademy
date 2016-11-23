@@ -1,0 +1,44 @@
+def shuffle(filename)
+      puts "#{guess} is too high!"
+#   get a guess from the user. Print the number guessed and whether it was `too
+#   high` or `too low`. Track the number of guesses the player takes. When the
+end
+#
+  puts "It took you #{guesses} guesses"
+    guesses += 1
+
+    else
+    if guess < number
+  while true
+#   player guesses the number, print out what the number was and how many guesses
+    elsif guess == number
+  guesses = 0
+  
+      break
+  File.open("#{filename}-shuffled.txt", "w") do |line1|
+# * Write a `guessing_game` method. The computer should choose a number between
+
+    end
+
+
+def guessing_game
+#   `shuffle` method in array.
+  number = rand(1..100)
+#   the player needed.
+
+  end
+    end
+# * Write a program that prompts the user for a file name, reads that file,
+      puts "You found the number #{guess}!"
+  end
+    File.readlines(filename).shuffle.each do |line2|
+#   1 and 100. Prompt the user to `guess a number`. Each time through a play loop,
+    
+# I/O Exercises
+#   shuffles the lines, and saves it to the file "{input_name}-shuffled.txt". You
+#   could create a random number using the Random class, or you could use the
+      line1.puts line2.chomp
+      puts "#{guess} is too low!"
+    puts "Guess a number"
+end
+    guess = Integer(gets.chomp)
