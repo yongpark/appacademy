@@ -1,0 +1,45 @@
+class Cli
+  attr_accessor :person, :email
+
+    def initialize
+      @person = nil
+      @email = nil
+    end
+
+    def get_email
+      puts "what is your email"
+      @email = gets.chomp
+    end
+
+    def new_person
+      @person = User.find_by(:email => @email)
+    end
+
+    def short?
+      puts "What do you want to do?"
+      puts "0. Create shortened URL."
+      puts "1. Visit shortened URL."
+
+      answer = gets.chomp
+
+      if answer == "0"
+        p @person
+        puts "Type in your long url"
+        url = gets.chomp
+        ShortenedUrl.create_for_user_and_long_url!(@person, url)
+
+        p ShortenedUrl.short_url
+      else
+        puts "Type in the shortened URL"
+        short = gets.chomp
+      end
+    end
+
+    def run
+      get_email
+      new_person 
+      short?
+    end
+end
+
+Cli.new.run
