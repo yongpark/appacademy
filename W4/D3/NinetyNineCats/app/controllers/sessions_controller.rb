@@ -26,7 +26,6 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out
-    @user.session_token = nil
   end
 
   private
