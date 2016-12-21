@@ -1,0 +1,26 @@
+.sections {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 1px solid $light-gray;
+	position: relative;
+}
+
+.sections ul {
+	display: flex;
+}
+
+.sections li{
+  margin: 10px 8px;
+  font-size: 12px;
+  font-family: $sans-serif;
+}
+
+
+.sections li:hover:not(:last-child) {
+	background-color: $light-gray;
+}
+
+.sections a {
+	font-size: 10px;
+}
