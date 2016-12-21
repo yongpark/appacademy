@@ -1,0 +1,48 @@
+html body h1 figure ul li {
+
+}
+
+li {
+  float: left;
+  width: 150px;
+  height: 150px;
+  background-color: #01579B;
+  border: 5px solid #80DEEA;
+  box-sizing: border-box;
+}
+
+ul{
+  margin: auto;
+  list-style: none;
+  padding: 0px;
+  height: 450px;
+  width: 450px;
+  border: 2px solid #80DEEA;
+  box-shadow: 5px 5px 10px 0px #4A148C;
+}
+
+body {
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+}
+
+li:hover {
+  background-color: #64FFDA;
+  cursor: pointer;
+}
+
+.marks {
+  color: #0091EA;
+  font-family: Arial;
+  font-size: 125px;
+  margin: auto;
+  line-height: 125px;
+
+}
+.marked{
+  background-color: #FFFFFF;
+}
+.winner {
+  background-color: #64FFDA;
+}
