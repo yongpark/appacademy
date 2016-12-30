@@ -1,0 +1,12 @@
+<ul>
+  <% @trivia.each do |trivium| %>
+    <li><%= trivium.fact %></li>
+  <% end %>
+</ul>
+
+<form>
+  <label>Number:
+    <input type="text" id="num"/>
+  </label>
+  <input type="submit" value="Create Fact!"/>
+</form>
